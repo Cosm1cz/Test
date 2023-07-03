@@ -13,6 +13,7 @@ public class testcon {
     private JdbcTemplate jdbcTemplate;
 
     public List<Map<String, Object>> tet() {
+        String s = "  ";
         String sql = "select * from test_data";
         List<Map<String, Object>> list = jdbcTemplate.queryForList(sql);
         return list;
